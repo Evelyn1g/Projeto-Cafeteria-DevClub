@@ -79,7 +79,8 @@ section {
     display: flex;
     align-items: center;
     height: 100vh;
-    min-width: 100vh;
+    min-height: 100vh;
+    width: 100%;
 }
 
 .content {
@@ -243,3 +244,109 @@ section {
 .footer .share img:hover {
     background-color: var(--main-color);
 }
+
+/* MENU RESPONSIVO */
+@media (max-width: 768px) {
+    .navbar {
+        display: none;
+        flex-direction: column;
+        background: var(--black);
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 200px;
+        border-left: var(--border);
+        border-bottom: var(--border);
+        padding: 1rem;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .icons {
+        display: flex;
+        gap: 10px;
+    }
+}
+
+/* AJUSTES GERAIS NO MOBILE */
+@media (max-width: 768px) {
+
+    /* Títulos */
+    .title {
+        font-size: 3rem;
+    }
+
+    /* Textos */
+    .content h3 {
+        font-size: 3rem;
+    }
+
+    .content p {
+        font-size: 1.6rem;
+    }
+
+    /* Seção Sobre */
+    .about .row {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .about .row .conteiner-image img {
+        width: 100%;
+    }
+
+    /* Menu */
+    .menu .box-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* Review */
+    .review .box-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* Endereço */
+    iframe {
+        width: 100%;
+        height: 300px;
+    }
+
+    /* Header */
+    .header section {
+        padding: 1rem;
+    }
+
+    .navbar a {
+        margin: 1rem 0;
+        font-size: 1.6rem;
+    }
+
+    .icons img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .content h3 {
+        font-size: 2.4rem;
+    }
+
+    .content p {
+        font-size: 1.4rem;
+    }
+
+    .btn {
+        padding: 0.8rem 2rem;
+        font-size: 1.4rem;
+    }
+}
+
+
+
+
+
+/* MEXENDO A PARTIR DE AQUI  */
