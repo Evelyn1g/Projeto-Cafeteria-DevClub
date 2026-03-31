@@ -8,4 +8,4 @@ Projeto de um site moderno para cafeteria.
 - Responsividade
 
 ## 🌐 Site Online
-👉 *link do GitHub Pages*
+👉 *https://evelyn1g.github.io/Projeto-Cafeteria-DevClub/*
